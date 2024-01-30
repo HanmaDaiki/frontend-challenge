@@ -7,3 +7,39 @@
     gap: 48px;
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .favorites {
+    .cats {
+      grid-template-columns: repeat(4, auto);
+    }
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .favorites {
+    .cats {
+      grid-template-columns: repeat(3, auto);
+    }
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .favorites {
+    .cats {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .favorites {
+    padding: 48px 5px 144px;
+    .cats {
+      grid-template-columns: repeat(1, auto);
+      justify-content: center;
+    }
+  }
+}
+
