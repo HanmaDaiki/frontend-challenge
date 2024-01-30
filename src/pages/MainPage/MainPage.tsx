@@ -11,18 +11,21 @@ export default function MainPage() {
 
   const dispath = useAppDispatch();
 
+  const loadCats = () => {
+    dispath(loadingCats(page));
+    setPage(page + 1);
+  }
+
   const handleScroll = () => {
     if (window.innerHeight + document.documentElement.scrollTop !== document.documentElement.offsetHeight || status === 'pending') {
       return;
     }
 
-    dispath(loadingCats(page));
-    setPage(page + 1);
+    loadCats();
   }
 
   useEffect(() => {
-    if (cats.length === 0) dispath(loadingCats(page));
-    setPage(page + 1);
+    if (cats.length === 0) loadCats();
   }, []);
 
   useEffect(() => {
@@ -39,6 +42,12 @@ export default function MainPage() {
         }
       </section>
 
+      {
+        status === 'fulfilled' &&
+        <div className={styles.pending}>
+          <button className={styles.more}>... загружаем еще котиков ...</button>
+        </div>
+      }
 
       {
         status === 'pending' &&
