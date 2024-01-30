@@ -1,5 +1,5 @@
 .main {
-  padding: 48px 62px 144px;
+  padding: 48px 62px 200px;
 
   .cats {
     display: grid;
@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 630px) {
   .main {
-    padding: 48px 5px 144px;
+    padding: 48px 5px 200px;
     .cats {
       grid-template-columns: repeat(1, auto);
       justify-content: center;
