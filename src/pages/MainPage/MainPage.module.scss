@@ -1,5 +1,5 @@
 .main {
-  padding: 48px 62px;
+  padding: 48px 62px 144px;
 
   .cats {
     display: grid;
@@ -9,7 +9,9 @@
 
   .pending {
     padding-top: 48px;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 }
