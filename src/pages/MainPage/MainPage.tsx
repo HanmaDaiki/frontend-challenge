@@ -45,7 +45,7 @@ export default function MainPage() {
       {
         status === 'fulfilled' &&
         <div className={styles.pending}>
-          <button className={styles.more}>... загружаем еще котиков ...</button>
+          <button className={styles.more} onClick={loadCats}>... загружаем еще котиков ...</button>
         </div>
       }
 
