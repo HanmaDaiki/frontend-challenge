@@ -1,0 +1,9 @@
+.favorites {
+  padding: 48px 62px;
+
+  .cats {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 48px;
+  }
+}

@@ -1,0 +1,22 @@
+.like {
+  background-image: url(../../../shared/images/like.svg);
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: absolute;
+  bottom: 19px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    background-image: url(../../../shared/images/like-active.svg);
+  }
+
+  &.active { 
+    background-image: url(../../../shared/images/like-active.svg);
+  }
+}

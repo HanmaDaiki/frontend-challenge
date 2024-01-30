@@ -1,0 +1,1 @@
+export const API_CATS_KEY = 'live_tMR6qELTcmhXPBc77VOOLve0UoCRixkltXGeDlnSptLiYA0vl3aRVoQR09xb5LNr';

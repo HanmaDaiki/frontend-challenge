@@ -1,0 +1,18 @@
+.list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  a {
+    text-decoration: none;
+    padding: 23px 22px;
+    color: #fff;
+  }
+}
+
+.active {
+  background-color: rgba(0, 0, 0, .1);
+}
