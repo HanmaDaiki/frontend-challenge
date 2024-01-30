@@ -15,3 +15,39 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .main {
+    .cats {
+      grid-template-columns: repeat(4, auto);
+    }
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .main {
+    .cats {
+      grid-template-columns: repeat(3, auto);
+    }
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .main {
+    .cats {
+      grid-template-columns: repeat(2, auto);
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .main {
+    padding: 48px 5px 144px;
+    .cats {
+      grid-template-columns: repeat(1, auto);
+      justify-content: center;
+    }
+  }
+}
+
